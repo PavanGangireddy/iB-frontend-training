@@ -12,3 +12,7 @@ function addressMaker(address) {
 }
 ```
 
+* [ ] After the challenge, go through the exercises listed here,
+
+{% page-ref page="../exercises-1.md" %}
+
