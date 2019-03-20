@@ -1,15 +1,16 @@
-# ES6 - const and let
+# Introduction
 
+ES6 is also known as ES2015.
 
+This module helps to build javascript expertise and serves as a roadmap for a beginner to advanced developer.
 
-ES6 has two new keywords for declaring variables: `let` and `const`
+It is divided in to Basics, Intermediate, Advanced modes.    
 
-Example:    
+#### **Prerequisites:** <a id="a70d"></a>
 
-1. let str = 'Hello World';
-   * Using let, we can create variables which can be changed later in the program. 
-2. const num = 12345;
-   * Variables declared with const can never be changed. 
+* Urge to learn
 
-* [Reference](https://www.udemy.com/es6-bootcamp-next-generation-javascript/?ranMID=39197&ranEAID=Fh5UMknfYAU&ranSiteID=Fh5UMknfYAU-WILZlFH2IwWhRIe45YAF1Q&LSNPUBID=Fh5UMknfYAU%20%20)
+#### Getting started: <a id="9f56"></a>
+
+You can use online code editors to practice, or you can use [JS bin.](https://jsbin.com/?js,console)
 
