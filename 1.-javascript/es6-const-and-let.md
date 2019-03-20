@@ -2,8 +2,6 @@
 
 ES6 has two new keywords for declaring variables: `let` and `const`
 
->
-
 Example:    
 
 * let str = 'Hello World';
