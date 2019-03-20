@@ -1,4 +1,4 @@
-# ES6 Rest Operator - { ... }
+# 1.4 Rest Operator - { ... }
 
 * Syntactically, it looks exactly the same as spread operator. But it’s function is the exact opposite of the spread Operator. If Spread operator expands individual items, then rest operator collects a bunch of items and puts them into arrays and objects.
 * Example 1: Array rest operator

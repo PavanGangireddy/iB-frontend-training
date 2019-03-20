@@ -1,4 +1,4 @@
-# ES6 Spread Operator - { ... }
+# 1.3 Spread Operator - { ... }
 
 * Spread operator expands individual items
 * Example 1: Array spread operator:

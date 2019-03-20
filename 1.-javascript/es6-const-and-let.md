@@ -1,4 +1,4 @@
-# ES6 - const and let
+# 1.1 Const and let
 
 ES6 has two new keywords for declaring variables: `let` and `const`
 

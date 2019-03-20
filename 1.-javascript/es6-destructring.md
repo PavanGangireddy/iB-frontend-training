@@ -1,4 +1,4 @@
-# ES6 destructuring
+# 1.2 Destructuring
 
 
 
