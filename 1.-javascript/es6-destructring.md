@@ -1,7 +1,7 @@
 # 1.2 Destructuring
 
 * Simplifies extracting data on objects and arrays into distinct variables.
-* Example1: Object destructuring
+* Example 1: Object destructuring
 
 ```javascript
 const fullName = { firstName: "Siddu", lastName: "Roy" }
@@ -11,7 +11,7 @@ console.log('firstName', firstName, 'lastName', lastName)
 // Can we modify firstName variable here? Yes/No
 ```
 
-* Example2: Renaming variables when destructured
+* Example 2: Renaming variables when destructured
 
 ```javascript
 let fullName= { firstName: "Siddu", lastName: "Roy" }
@@ -22,7 +22,7 @@ console.log('Whats the output? => firstName', firstName, 'lastName', lastName)
 // Can we modify fn variable here? Yes/No
 ```
 
-* Example3: Array destructuring
+* Example 3: Array destructuring
 
 ```javascript
 const person = ["Siddu", "Roy", 26]
