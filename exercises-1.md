@@ -173,6 +173,24 @@ document.write(personTemplate(person));
 
 ```
 {% endtab %}
+
+{% tab title="1.6" %}
+```javascript
+// Exercise 1
+
+const cat = { 
+    lives: 9, 
+    jumps: () => { 
+        this.lives-- 
+    }
+}
+cat.jumps() 
+console.log("Whats the output? =>", cat.lives)
+
+// this is not bound to anything, 
+// and will inherit the value of this from its parent scope.
+```
+{% endtab %}
 {% endtabs %}
 
 
