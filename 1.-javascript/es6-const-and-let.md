@@ -6,6 +6,9 @@ Example:
 
 * let str = 'Hello World';
   * Using let, we can create variables which can be changed later in the program. 
+
+
+
 * const num = 12345;
   * Variables declared with const can never be changed.
 
