@@ -33,6 +33,26 @@ console.log(firstName, otherDetails); // Code { age: 22, lastName: "Burst" }
 // Here we did destructuring using object spread operator
 ```
 
+* Example 4: Removes verbose code
+
+```javascript
+const operations = {}
+const defaultAddFn = () => {}
+
+const { addProp: addFn } = operations;
+
+// is equivalent to:
+
+let addFn;
+if (operations.addProp === undefined) {
+    addFn = defaultAddFn;
+} else {
+    addFn = operations.addProp;
+}
+
+// Understand how destructuring removed verbosity
+```
+
 * [ ] Give a thought on use cases where we may use this in our codebase.
 
 {% hint style="info" %}
