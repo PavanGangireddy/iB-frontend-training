@@ -1,7 +1,6 @@
 # 1.2 Destructuring
 
 * Simplifies extracting data on objects and arrays into distinct variables.
-* It is important to note that destructuring does not remove properties or values from the original object or array. It merely copies it.
 * Example1: Object destructuring
 
 ```javascript
@@ -29,4 +28,8 @@ console.log('firstName', firstName)
 // Here, firstName is pointing towards the first item in the array on the 
 // right-hand side. 
 ```
+
+{% hint style="info" %}
+_It is important to note that destructuring does not remove properties or values from the original object or array. It merely copies it._
+{% endhint %}
 

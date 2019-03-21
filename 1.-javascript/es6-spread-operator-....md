@@ -8,9 +8,10 @@ let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
 let arr3 = [...arr1, ...arr2];
 console.log(arr3) // [1, 2, 3, 4, 5, 6];
-```
 
-Here we are combining two arrays by putting them in a new array with three dots \(…\) in front of the name of the array.
+// Here we are combining two arrays by putting them in a 
+// new array with three dots (…) in front of the name of the array.
+```
 
 * Example 2:
 
