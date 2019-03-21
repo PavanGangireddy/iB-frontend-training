@@ -132,6 +132,45 @@ console.log("Dear Mom,\n" +
 // How to escape character backslash - \
 
 console.log("Print this using template string: My name is: \Mahesh")
+
+// Exercise 3
+
+// Rewrite the below expression using template strings
+
+let paragraph = "Paragraph: \n" +
+"\t1. Point 1:\n" +
+"\t\t1.1 Sub-point 1:\n" +
+"\t\t1.2 Sub-point 2:\n" +
+"\t2. Point 2:\n" +
+"\t\t2.1 Sub-point 1:\n" +
+"\t\t2.2 Sub-point 2:\n" +
+"\t3. Point 3:\n" +
+"\t\t3.1 Sub-point 1:\n" +
+"\t\t3.2 Sub-point 2:\n" +
+"Conclusion: I'm exhausted! Did I miss anything?";
+
+console.log(paragraph);
+
+// Exercise 4
+
+// Rewrite the below expression using template strings
+
+let person = {
+    name: "Maya",
+    hobbies: ["reading", "drawing", "traveling"],
+    job: "Developer"
+};
+function personTemplate(person){
+    return "<article class='person'>" +
+                "<h3>" + person.name + "</h3>" +   
+                "<p> Hobbies: " + person.hobbies +  "</p>" +
+                "<p> Current job: " + person.job + "</p>" +                         
+           "</article>";
+}
+
+document.write(personTemplate(person));
+
+
 ```
 {% endtab %}
 {% endtabs %}
