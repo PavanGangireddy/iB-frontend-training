@@ -33,24 +33,27 @@ console.log(firstName, otherDetails); // Code { age: 22, lastName: "Burst" }
 // Here we did destructuring using object spread operator
 ```
 
-* Example 4: Removes verbose code
+* Example 4: Improves readability
 
 ```javascript
-const operations = {}
-const defaultAddFn = () => {}
+const operations = {
+  list: {
+    addFunction: function(a,b){
+      return a+b
+    },
+    multiplyFunction: function(a,b){
+      return a*b
+    },    
+  }
+}
 
-const { addProp: addFn } = operations;
+const { list : { addFunction: addFn } } = operations
 
 // is equivalent to:
 
-let addFn;
-if (operations.addProp === undefined) {
-    addFn = defaultAddFn;
-} else {
-    addFn = operations.addProp;
-}
+let addFn = operations.list.addFunction
 
-// Understand how destructuring removed verbosity
+// Understand how destructuring improved readability
 ```
 
 * [ ] Give a thought on use cases where we may use this in our codebase.
