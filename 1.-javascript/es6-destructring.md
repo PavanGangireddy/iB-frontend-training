@@ -7,6 +7,8 @@
 const fullName = { firstName: "Siddu", lastName: "Roy" }
 const { firstName, lastName } = fullName
 console.log('firstName', firstName, 'lastName', lastName)
+
+// Can we modify firstName variable here? Yes/No
 ```
 
 * Example2:
@@ -16,6 +18,8 @@ let fullName= { firstName: "Siddu", lastName: "Roy" }
 let { firstName: fn, lastName: ln } = fullName
 console.log('Whats the output? => firstName', fn, 'lastName', ln)
 console.log('Whats the output? => firstName', firstName, 'lastName', lastName)
+
+// Can we modify fn variable here? Yes/No
 ```
 
 * Example3: Array destructuring
