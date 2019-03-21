@@ -11,7 +11,7 @@ console.log('firstName', firstName, 'lastName', lastName)
 // Can we modify firstName variable here? Yes/No
 ```
 
-* Example2:
+* Example2: Renaming variables when destructured
 
 ```javascript
 let fullName= { firstName: "Siddu", lastName: "Roy" }
