@@ -189,6 +189,18 @@ console.log("Whats the output? =>", cat.lives)
 
 // this is not bound to anything, 
 // and will inherit the value of this from its parent scope.
+
+
+// Exercise 2
+
+const button = document.getElementById('press');
+button.addEventListener('click', () => {
+  this.classList.toggle('on');
+});
+
+// If we click the button, we would get a TypeError. 
+// It is because this is not bound to the button, 
+// but instead bound to its parent scope.
 ```
 {% endtab %}
 {% endtabs %}
