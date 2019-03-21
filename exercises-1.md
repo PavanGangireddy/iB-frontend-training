@@ -15,20 +15,26 @@ let name = 'Rajesh'
 if (true) {
   let name = 'Suresh'
 }
-console.log("1.1: What's the name?", name)
+console.log("What's the name?", name)
 // `let` restricts the scope of the variable to the current(if) block. 
 // hence it is `block scoped`.
 
 // Exercise 2
 
-const oldArray = [1, 2, 3]
-oldArray.push(4)
-console.log('1.2: Does this throw error?', oldArray)
+const numbersList = [1, 2, 3]
+numbersList.push(4)
+console.log('Can we do this? Why?', numbersList)
 
 // In the case of arrays or objects, const variables are pointing to the values
 // stored inside the memory
 // Object, basically the pointer wont change when we do a push operation,
 // but the value holding by it changes.
+
+// Exercise 3
+
+const person = { name: 'Kalyan', age: 30  }
+person.gender = 'male'
+console.log('Does this throw error?', person)
 ```
 {% endtab %}
 
@@ -44,13 +50,15 @@ console.log('Will it throw error?', lastName, 'age',age)
 console.log('Whats the output? => person.lastName', person[1], 'person.age',
   person[2]
 )
+// Give a thought when person, firstName, lastName, age are defined with 
+// `const` keyword
 
 // Exercise 2 
 
-let a = 1,
+let a = 1
 let b = 2
-let array1 = [a, b]
-[b, a] = array1
+let atobarray = [a, b]
+[b, a] = atobarray
 console.log('Whats the output? =>', a, b)
 
 // Exercise 3
@@ -63,6 +71,30 @@ console.log('Whats the output? =>', c, d)
 const address = [221, 'Baker Street', 'London']
 const [houseNo, , city] = address
 console.log('Whats the output? =>', houseNo, city)
+
+// Exercise 5
+
+const { length: len } = 'abc'; 
+console.log('Whats the output? =>', length)
+console.log('Whats the output? =>', len)
+
+// Exercise 6 
+
+const operations = {}
+const defaultAddFn = () => {}
+
+const { addProp: addFn=defaultAddFn } = operations;
+
+// is equivalent to:
+
+let addFn;
+if (operations.addProp === undefined) {
+    addFn = defaultAddFn;
+} else {
+    addFn = operations.addProp;
+}
+
+// Understand how destructuring removed verbosity
 ```
 {% endtab %}
 
@@ -82,6 +114,24 @@ console.log('Whats the output? =>', characters)
 
 const [firstLetter, ...restOfTheLetters] = 'Codeburst'
 console.log('Whats the output? =>', firstLetter, restOfTheLetters)
+```
+{% endtab %}
+
+{% tab title="1.5" %}
+```javascript
+// Exercise 1
+
+// Write the below expression using template literals
+
+console.log("Dear Mom,\n" + 
+"Hope you are well.\n" + 
+"\tLove, your son")
+
+// Exercise 2
+
+// How to escape character backslash - \
+
+console.log("Print this using template string: My name is: \Mahesh")
 ```
 {% endtab %}
 {% endtabs %}

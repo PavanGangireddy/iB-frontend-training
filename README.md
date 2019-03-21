@@ -18,13 +18,13 @@ This course is organised into several modules and concepts.
 
 ### 1. Javascript
 
-* [x] ES6 - const and let
-* [x] ES6 destructuring
-* [x] ES6 Spread Operator
-* [x] ES6 Rest Operator
-* [ ] Template strings
-* [ ] ES6 Arrow Functions
-* [ ] ES6 Classes
+* [x] Const and let
+* [x] Destructuring
+* [x] Spread Operator
+* [x] Rest Operator
+* [x] Template Literals
+* [ ] Arrow Functions
+* [ ] Classes
 
 ### 2. React
 

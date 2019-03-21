@@ -26,10 +26,15 @@ console.log(arr1) // [1, 2, 3];
 
 ```javascript
 const details = { firstName: 'Code', lastName: 'Burst', age: 22 };
-const { firstName, age } = details;
-console.log(firstName, age);
-// Code 22
+const { firstName, ...otherDetails } = details;
+console.log(firstName, otherDetails); // Code { age: 22, lastName: "Burst" }
+
+// Here we did destructuring using object spread operator
 ```
 
-* `NOTE`: We generally need to integrate `babel-plugin-syntax-object-rest-spread` to use this new feature in to our code base.
+* [ ] Give a thought on use cases where we may use this in our codebase.
+
+{% hint style="info" %}
+We generally need to integrate `babel-plugin-syntax-object-rest-spread` to use this new feature in to our code base.
+{% endhint %}
 
