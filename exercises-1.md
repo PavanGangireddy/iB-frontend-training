@@ -148,7 +148,7 @@ if (fullName.lastName === undefined) {
 ```
 
 {% hint style="info" %}
-For more complex exercises go through [this](http://exploringjs.com/es6/ch_destructuring.html).
+_For more challenging exercises go through_ [_this_](http://exploringjs.com/es6/ch_destructuring.html)_._
 {% endhint %}
 {% endtab %}
 

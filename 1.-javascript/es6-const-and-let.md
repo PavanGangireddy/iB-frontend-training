@@ -29,7 +29,7 @@ console.log('name:', name)
 ```
 
 {% hint style="info" %}
-Block-level declarations are made in block/lexical scopes that are created inside a block “{ }”.
+_Block-level declarations are made in block/lexical scopes that are created inside a block “{ }”._
 {% endhint %}
 
 

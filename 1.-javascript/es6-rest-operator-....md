@@ -35,7 +35,7 @@ const [ firstLetter, ...restOfTheLetters, lastLetter ] = 'Codeburst';
 * [ ] Give a thought on use cases where we may use this in our codebase.
 
 {% hint style="info" %}
-If we use rest operator to gather function arguments into an array, it is termed as `rest parameter`.
+_If we use rest operator to gather function arguments into an array, it is termed as `rest parameter`._
 {% endhint %}
 
 * References:

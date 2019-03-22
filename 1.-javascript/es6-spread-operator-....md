@@ -62,7 +62,3 @@ let addFn = operations.list.addFunction
 
 * [ ] Give a thought on use cases where we may use this in our codebase.
 
-{% hint style="info" %}
-We generally need to integrate `babel-plugin-syntax-object-rest-spread` to use this new feature in to our code base.
-{% endhint %}
-
