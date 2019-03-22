@@ -11,15 +11,20 @@ description: >-
 ```javascript
 // Exercise 1
 
-let name = 'Rajesh'
-if (true) {
-  let name = 'Suresh'
+function getShape(condition) {
+    // console.log("shape inside function block: ", shape);
+    if (condition) {
+        let shape = "square";
+        console.log("shape inside if block: ", shape);
+        return shape;
+    } else {
+        console.log("shape inside else block: ", shape);
+        return false;
+    }
 }
 
-console.log("name:", name)
-
-// 1. let restricts the scope of the variable to the current(if) block. 
-// hence it is `block scoped`.
+getShape(true)
+getShape(false)
 
 // Exercise 2
 
@@ -28,6 +33,9 @@ const b;
 
 console.log("a, b:", a, b)
 
+// #1. Every const declaration must be initialized at the time of 
+// declaration.
+
 // Exercise 3
 
 const numbersList = [1, 2, 3]
@@ -35,15 +43,15 @@ numbersList.push(4)
 
 console.log('Can we do this? Why?', numbersList)
 
-// 2. In the case of arrays or objects, const variables are pointing 
+// #2. In the case of arrays or objects, const variables are pointing 
 // to the values stored inside the memory
-// 3. Object, basically the pointer wont change when we do a push 
+// #3. Object, basically the pointer wont change when we do a push 
 // operation, but the value holding by it changes.
 
 // Exercise 4
 
 const person = { 
-  name: 'Kalyan', 
+  name: 'Ramesh', 
   age: 30  
 }
 
@@ -105,7 +113,7 @@ const [x=3, y] = [];
 
 console.log('x, y:', x, y)
 
-// 1. If a part has no match in the source, 
+// #1. If a part has no match in the source, 
 // destructuring continues with the default value.
 
 // Exercise 7
@@ -118,7 +126,7 @@ const [x=1, y=2, z=3] = [a, b, c];
 
 console.log('x, y, z:', x, y, z)
 
-// 2. undefined triggers default values
+// #2. undefined triggers default values
 
 // Exercise 8 
 
@@ -136,7 +144,7 @@ if (fullName.lastName === undefined) {
     lastName = fullName.lastName;
 }
 
-// 3. Understand how destructuring removed verbosity in 
+// #3. Understand how destructuring removed verbosity in 
 // object patterns
 ```
 
