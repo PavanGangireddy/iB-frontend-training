@@ -302,14 +302,17 @@ document.write(personTemplate(person));
 ```javascript
 // Exercise 1
 
+this.lives = 20
+
 const cat = { 
     lives: 9, 
     jumps: () => { 
         this.lives-- 
     }
 }
+
 cat.jumps() 
-console.log("Whats the output? =>", cat.lives)
+console.log("cat.lives, this.lives: ", cat.lives, this.lives)
 
 // this is not bound to anything, 
 // and will inherit the value of this from its parent scope.
