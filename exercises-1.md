@@ -156,10 +156,44 @@ _For more challenging exercises go through_ [_this_](http://exploringjs.com/es6/
 ```javascript
 // Exercise 1
 
+let oldArray = [ 1, 2, 3 ]; 
+let newArray = oldArray; 
+  
+oldArray.push(4); 
+  
+console.log("newArray: ", newArray); 
+console.log("oldArray: ", oldArray); 
+
+// Exercise 2
+
+let oldArray = [ 1, 2, 3 ]; 
+let spreadArray = [ ...oldArray ]; 
+  
+spreadArray.push(4); 
+  
+console.log("spreadArray: ", spreadArray); 
+console.log("oldArray: ", oldArray); 
+
+// Exercise 3
+
+const spreadTester = (a, b, c, d, e = 4, f) => {
+    console.log('a, b, c, d, e, f: ', a, b, c, d, e, f);
+}
+const args = [0, 1];
+spreadTester(-1, ...args, 2, ...[3]);
+
+// Exercise 4
+
 const codeburst = 'CODEBURST'
 const characters = [...codeburst]
 
-console.log('Whats the output? =>', characters)
+console.log('characters: ', characters)
+
+// Exercise 5
+
+const spreadSummary = [ "Spread operator", "expands", "individual", "items"]
+
+console.log('Summary: ', ...spreadSummary)
 ```
 {% endtab %}
 

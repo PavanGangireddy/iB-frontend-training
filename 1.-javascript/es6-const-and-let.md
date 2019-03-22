@@ -36,6 +36,7 @@ _Block-level declarations are made in block/lexical scopes that are created insi
 
 * `const`
   * Bindings declared using `const` are treated as **constants**, and __therefore **they cannot be re-assigned values once defined**.
+  * const  is also `block`scoped.
 * Example 1: 
 
 ```javascript
