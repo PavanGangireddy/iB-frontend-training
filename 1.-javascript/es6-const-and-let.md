@@ -46,9 +46,9 @@ shape = "square"
 console.log('shape:', shape)
 ```
 
-
+{% page-ref page="../exercises-1.md" %}
 
 * References
-  * [Ref](https://www.udemy.com/es6-bootcamp-next-generation-javascript/?ranMID=39197&ranEAID=Fh5UMknfYAU&ranSiteID=Fh5UMknfYAU-WILZlFH2IwWhRIe45YAF1Q&LSNPUBID=Fh5UMknfYAU%20%20)
+  * [Let & Block Scope ](https://www.udemy.com/es6-bootcamp-next-generation-javascript/)
   * [let and const advanced understanding](https://medium.freecodecamp.org/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d)
 
