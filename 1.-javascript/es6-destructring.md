@@ -4,20 +4,30 @@
 * Example 1: Object destructuring
 
 ```javascript
-const fullName = { firstName: "Siddu", lastName: "Roy" }
+const fullName = { 
+    firstName: "Siddu", 
+    lastName: "Roy" 
+}
 const { firstName, lastName } = fullName
-console.log('firstName', firstName, 'lastName', lastName)
+// The above statement is similar to:
+// const firstName = fullName.firstName
+// const lastName = fullName.lastName
 
-// Can we modify firstName variable here? Yes/No
+console.log('firstName:', firstName, 'lastName:', lastName)
 ```
 
 * Example 2: Renaming variables when destructured
 
 ```javascript
-let fullName= { firstName: "Siddu", lastName: "Roy" }
+let fullName = { 
+    firstName: "Siddu", 
+    lastName: "Roy" 
+}
 let { firstName: fn, lastName: ln } = fullName
-console.log('Whats the output? => firstName', fn, 'lastName', ln)
-console.log('Whats the output? => firstName', firstName, 'lastName', lastName)
+
+console.log("fn:", fn,"ln:", ln)
+
+console.log('firstName:', firstName, 'lastName:', lastName)
 
 // Can we modify fn variable here? Yes/No
 ```
@@ -27,7 +37,8 @@ console.log('Whats the output? => firstName', firstName, 'lastName', lastName)
 ```javascript
 const person = ["Siddu", "Roy", 26]
 const [ firstName ] = person
-console.log('firstName', firstName)
+
+console.log('firstName:', firstName)
 
 // Here, firstName is pointing towards the first item in the array on the 
 // right-hand side. 

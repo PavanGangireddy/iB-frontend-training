@@ -6,6 +6,7 @@ Example:
 
 * let str = 'Hello World';
   * Using let, we can create variables which can be changed later in the program. 
+  * let  is `block`scoped.
 
 
 

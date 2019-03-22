@@ -15,7 +15,9 @@ let name = 'Rajesh'
 if (true) {
   let name = 'Suresh'
 }
-console.log("What's the name?", name)
+
+console.log("name:", name)
+
 // `let` restricts the scope of the variable to the current(if) block. 
 // hence it is `block scoped`.
 
@@ -23,6 +25,7 @@ console.log("What's the name?", name)
 
 const numbersList = [1, 2, 3]
 numbersList.push(4)
+
 console.log('Can we do this? Why?', numbersList)
 
 // In the case of arrays or objects, const variables are pointing to the values
@@ -32,9 +35,14 @@ console.log('Can we do this? Why?', numbersList)
 
 // Exercise 3
 
-const person = { name: 'Kalyan', age: 30  }
+const person = { 
+  name: 'Kalyan', 
+  age: 30  
+}
+
 person.gender = 'male'
-console.log('Does this throw error?', person)
+
+console.log('Can we do this? Why?', person)
 ```
 {% endtab %}
 
@@ -43,40 +51,48 @@ console.log('Does this throw error?', person)
 // Exercise 1
 
 let person = ['Siddu', 'Rao', 26]
-let [firstName, lastName, age] = person
+let [ firstName, lastName, age ] = person
+
 lastName = 'Saint'
 age = 30
-console.log('Will it throw error?', lastName, 'age',age)
-console.log('Whats the output? => person.lastName', person[1], 'person.age',
-  person[2]
-)
+
+console.log('lastName:', lastName, 'age:',age)
+
+console.log('person -> lastName:', person[1], 'person -> age', person[2])
+
 // Give a thought when person, firstName, lastName, age are defined with 
-// `const` keyword
+// const keyword
 
 // Exercise 2 
 
 let a = 1
 let b = 2
 let atobarray = [a, b]
+
 [b, a] = atobarray
+
 console.log('Whats the output? =>', a, b)
 
 // Exercise 3
 
 let [, , , c, d] = [1, 2, 3]
-console.log('Whats the output? =>', c, d)
+
+console.log('c, d:', c, d)
 
 // Exercise 4
 
-const address = [221, 'Baker Street', 'London']
-const [houseNo, , city] = address
-console.log('Whats the output? =>', houseNo, city)
+const address = [ 221, 'Baker Street', 'London' ]
+const [ houseNo, , city ] = address
+
+console.log('houseNo, city:', houseNo, city)
 
 // Exercise 5
 
 const { length: len } = 'abc'; 
-console.log('Whats the output? =>', length)
-console.log('Whats the output? =>', len)
+
+console.log('length:', length)
+
+console.log('len:', len)
 
 // Exercise 6 
 

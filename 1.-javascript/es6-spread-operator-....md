@@ -7,7 +7,8 @@
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
 let arr3 = [...arr1, ...arr2];
-console.log(arr3) // [1, 2, 3, 4, 5, 6];
+
+console.log(arr3)
 
 // Here we are combining two arrays by putting them in a 
 // new array with three dots (…) in front of the name of the array.
@@ -18,7 +19,9 @@ console.log(arr3) // [1, 2, 3, 4, 5, 6];
 ```javascript
 let arr1 = [1, 2, 3];
 let arr2 = [...arr1];
+
 arr2.push(4)
+
 console.log(arr2) // [1, 2, 3, 4];
 console.log(arr1) // [1, 2, 3];
 ```
