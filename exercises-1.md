@@ -80,13 +80,12 @@ console.log('person -> lastName:', person[1], 'person -> age', person[2])
 
 // Exercise 2 
 
-let a = 1
-let b = 2
-let atobarray = [a, b]
+let a = 3;
+let b = 6;
 
-[b, a] = atobarray
+[a,b] = [b,a];
 
-console.log('Whats the output? =>', a, b)
+console.log('a,b:', a, b);
 
 // Exercise 3
 
