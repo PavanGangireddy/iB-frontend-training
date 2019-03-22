@@ -247,8 +247,7 @@ logSummary(...spreadArgs, "Rest", "Collects");
 
 // Write the below expression using template literals
 
-console.log("Dear Mom,\n" + 
-"Hope you are well.\n" + 
+console.log("Dear Mom,\n" + "Hope you are well.\n" + 
 "\tLove, your son")
 
 // Exercise 2
