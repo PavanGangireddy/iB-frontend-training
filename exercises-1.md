@@ -50,10 +50,10 @@ console.log('Can we do this? Why?', person)
 ```javascript
 // Exercise 1
 
-let person = ['Siddu', 'Rao', 26]
+let person = ['Siddu', 'Roy', 26]
 let [ firstName, lastName, age ] = person
 
-lastName = 'Saint'
+lastName = 'Sarkar'
 age = 30
 
 console.log('lastName:', lastName, 'age:',age)
@@ -94,23 +94,46 @@ console.log('length:', length)
 
 console.log('len:', len)
 
-// Exercise 6 
+// Exercise 6
 
-const operations = {}
-const defaultAddFn = () => {}
+const [x=3, y] = []; 
 
-const { addProp: addFn=defaultAddFn } = operations;
+console.log('x, y:', x, y)
+
+// If a part has no match in the source, 
+// destructuring continues with the default value.
+
+// Exercise 7
+
+let a
+let b = ""
+let c = null
+
+const [x=1, y=2, z=3] = [a, b, c];
+
+console.log('x, y, z:', x, y, z)
+
+// undefined triggers default values
+
+// Exercise 8 
+
+const fullName = { 
+    firstName: "Siddu"
+}
+
+const { firstName, lastName = "Roy" } = fullName
 
 // is equivalent to:
 
-let addFn;
-if (operations.addProp === undefined) {
-    addFn = defaultAddFn;
+let lastName;
+if (fullName.lastName === undefined) {
+    lastName = "Roy";
 } else {
-    addFn = operations.addProp;
+    lastName = fullName.lastName;
 }
 
-// Understand how destructuring removed verbosity
+// Understand how destructuring removed verbosity in 
+// object patterns
 ```
 {% endtab %}
 
@@ -120,6 +143,7 @@ if (operations.addProp === undefined) {
 
 const codeburst = 'CODEBURST'
 const characters = [...codeburst]
+
 console.log('Whats the output? =>', characters)
 ```
 {% endtab %}
@@ -129,6 +153,7 @@ console.log('Whats the output? =>', characters)
 // Exercise 1
 
 const [firstLetter, ...restOfTheLetters] = 'Codeburst'
+
 console.log('Whats the output? =>', firstLetter, restOfTheLetters)
 ```
 {% endtab %}
