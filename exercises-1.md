@@ -176,11 +176,11 @@ console.log("oldArray: ", oldArray);
 
 // Exercise 3
 
-const spreadTester = (a, b, c, d, e = 4, f) => {
+const spreadTest = (a, b, c, d, e = 4, f) => {
     console.log('a, b, c, d, e, f: ', a, b, c, d, e, f);
 }
 const args = [0, 1];
-spreadTester(-1, ...args, 2, ...[3]);
+spreadTest(-1, ...args, 2, ...[3]);
 
 // Exercise 4
 
@@ -201,11 +201,35 @@ console.log('Summary: ', ...spreadSummary)
 ```javascript
 // Exercise 1
 
+const restPrimaryTest = (a, b, c=2, ...rest) => {
+  
+  const [ d, e, f ] = rest
+  
+  console.log('a, b, c, d, e, f: ', a, b, c, d, e, f);
+}
+
+const args = [0, 1];
+restPrimaryTest(-1, ...args, 2, ...[3]);
+
+// Exercise 2
+
+const restTrickyTest = (a, b, c=5, ...rest) => {
+  
+  const [ d, , e=2, f=1 ] = rest
+  
+  console.log('a, b, c, d, e, f: ', a, b, c, d, e, f);
+}
+const args = [0, 1];
+restTrickyTest(-1, ...args, 2, ...[3]);
+
+
+// Exercise 3
+
 const [firstLetter, ...restOfTheLetters] = 'Codeburst'
 
 console.log('firstLetter, restOfTheLetters: ', firstLetter, restOfTheLetters)
 
-// Exercise 2
+// Exercise 4
 
 function logSummary(spread, expands, ...restArgs) {
   const [rest, collects] = restArgs 
