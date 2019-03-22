@@ -18,22 +18,29 @@ if (true) {
 
 console.log("name:", name)
 
-// `let` restricts the scope of the variable to the current(if) block. 
+// 1. let restricts the scope of the variable to the current(if) block. 
 // hence it is `block scoped`.
 
 // Exercise 2
+
+let a;
+const b;
+
+console.log("a, b:", a, b)
+
+// Exercise 3
 
 const numbersList = [1, 2, 3]
 numbersList.push(4)
 
 console.log('Can we do this? Why?', numbersList)
 
-// In the case of arrays or objects, const variables are pointing to the values
-// stored inside the memory
-// Object, basically the pointer wont change when we do a push operation,
-// but the value holding by it changes.
+// 2. In the case of arrays or objects, const variables are pointing 
+// to the values stored inside the memory
+// 3. Object, basically the pointer wont change when we do a push 
+// operation, but the value holding by it changes.
 
-// Exercise 3
+// Exercise 4
 
 const person = { 
   name: 'Kalyan', 
@@ -88,11 +95,9 @@ console.log('houseNo, city:', houseNo, city)
 
 // Exercise 5
 
-const { length: len } = 'abc'; 
+const { length } = 'Siddu'; 
 
 console.log('length:', length)
-
-console.log('len:', len)
 
 // Exercise 6
 
@@ -100,7 +105,7 @@ const [x=3, y] = [];
 
 console.log('x, y:', x, y)
 
-// If a part has no match in the source, 
+// 1. If a part has no match in the source, 
 // destructuring continues with the default value.
 
 // Exercise 7
@@ -113,14 +118,13 @@ const [x=1, y=2, z=3] = [a, b, c];
 
 console.log('x, y, z:', x, y, z)
 
-// undefined triggers default values
+// 2. undefined triggers default values
 
 // Exercise 8 
 
 const fullName = { 
     firstName: "Siddu"
 }
-
 const { firstName, lastName = "Roy" } = fullName
 
 // is equivalent to:
@@ -132,9 +136,13 @@ if (fullName.lastName === undefined) {
     lastName = fullName.lastName;
 }
 
-// Understand how destructuring removed verbosity in 
+// 3. Understand how destructuring removed verbosity in 
 // object patterns
 ```
+
+{% hint style="info" %}
+For more complex exercises go through [this](http://exploringjs.com/es6/ch_destructuring.html).
+{% endhint %}
 {% endtab %}
 
 {% tab title="1.3" %}

@@ -9,6 +9,7 @@ const fullName = {
     lastName: "Roy" 
 }
 const { firstName, lastName } = fullName
+
 // The above statement is similar to:
 // const firstName = fullName.firstName
 // const lastName = fullName.lastName
