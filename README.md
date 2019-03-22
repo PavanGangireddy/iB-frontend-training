@@ -1,4 +1,4 @@
-# Introduction
+# Welcome
 
 This course is organised into several modules and concepts.
 

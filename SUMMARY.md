@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Welcome](README.md)
 * [1. Javascript](1.-javascript/README.md)
   * [1.1 Const and let](1.-javascript/es6-const-and-let.md)
   * [1.2 Destructuring](1.-javascript/es6-destructring.md)
