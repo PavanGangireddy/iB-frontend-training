@@ -38,7 +38,7 @@ const [ firstLetter, ...restOfTheLetters, lastLetter ] = 'Codeburst';
 _If we use rest operator to gather function arguments into an array, it is termed as `rest parameter`._
 {% endhint %}
 
-* References:
+* **References**
   * [Simple Guide](https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
   * [Rest vs Spread Operators](https://scotch.io/bar-talk/javascripts-three-dots-spread-vs-rest-operators543)
   * [SketchNote](https://twitter.com/stephaniecodes/status/1029453269242990594)

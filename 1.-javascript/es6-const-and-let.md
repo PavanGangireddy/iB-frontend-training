@@ -47,7 +47,7 @@ shape = "square"
 console.log('shape:', shape)
 ```
 
-* References
+* [References](https://codeburst.io/javascript-what-are-template-literals-5d08a50ef2e3)
   * [Let & Block Scope ](https://www.udemy.com/es6-bootcamp-next-generation-javascript/)
   * [let and const advanced understanding](https://medium.freecodecamp.org/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d)
 
