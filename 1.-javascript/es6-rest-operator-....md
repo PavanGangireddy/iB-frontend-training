@@ -26,7 +26,7 @@ console.log(age, other);
 // 22 { firstName: 'Stalin', lastName: 'Ramesh' }
 ```
 
-* Example 3: In arrays and objects, the rest operator can only come at the end. That is, this syntax won’t work:
+* Example 3: `...rest` must always be last.
 
 ```javascript
 const [ firstLetter, ...restOfTheLetters, lastLetter ] = 'Codeburst';

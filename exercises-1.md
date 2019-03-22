@@ -203,7 +203,17 @@ console.log('Summary: ', ...spreadSummary)
 
 const [firstLetter, ...restOfTheLetters] = 'Codeburst'
 
-console.log('Whats the output? =>', firstLetter, restOfTheLetters)
+console.log('firstLetter, restOfTheLetters: ', firstLetter, restOfTheLetters)
+
+// Exercise 2
+
+function logSummary(spread, expands, ...restArgs) {
+  const [rest, collects] = restArgs 
+  console.log(`${spread} ${expands}, ${rest} ${collects}`)
+}
+
+const spreadArgs = ["Spread", "Expands"]
+logSummary(...spreadArgs, "Rest", "Collects");
 ```
 {% endtab %}
 
