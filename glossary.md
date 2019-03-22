@@ -11,7 +11,7 @@
 * [x] Spread Operator
 * [x] Rest Operator
 * [x] Template Literals
-* [ ] Arrow Functions
+* [x] Arrow Functions
 * [ ] Classes
 
 #### Intermediate
