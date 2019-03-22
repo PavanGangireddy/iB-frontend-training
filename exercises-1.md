@@ -216,6 +216,7 @@ let person = {
     hobbies: ["reading", "drawing", "traveling"],
     job: "Developer"
 };
+
 function personTemplate(person){
     return "<article class='person'>" +
                 "<h3>" + person.name + "</h3>" +   

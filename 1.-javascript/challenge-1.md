@@ -1,6 +1,7 @@
 # Challenge \#1
 
 * [ ] Now it’s time for the first challenge of the course! The goal here is to console log the new city, the new state, and the old city, old state
+* [ ] Use all the concepts you have learned now
 
 ```javascript
 function addressMaker(address) {
@@ -11,8 +12,4 @@ function addressMaker(address) {
   };
 }
 ```
-
-* [ ] After the challenge, go through the exercises - 1.1 to 1.4 listed here,
-
-{% page-ref page="../exercises-1.md" %}
 

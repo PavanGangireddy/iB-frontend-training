@@ -29,8 +29,9 @@ console.log(arr1) // [1, 2, 3];
 * Example 3: Object spread operator:
 
 ```javascript
-const details = { firstName: 'Code', lastName: 'Burst', age: 22 };
+const details = { firstName: 'Stalin', lastName: 'Ramesh', age: 22 };
 const { firstName, ...otherDetails } = details;
+
 console.log(firstName, otherDetails); // Code { age: 22, lastName: "Burst" }
 
 // Here we did destructuring using object spread operator

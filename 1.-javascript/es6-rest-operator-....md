@@ -6,6 +6,7 @@
 ```javascript
 const numbers = [1, 2, 3];
 const [ firstNumber, ...restOfTheNumbers ] = numbers;
+
 console.log(firstNumber, restOfTheNumbers);
 // 1 [ 2, 3 ]
 ```
@@ -14,13 +15,15 @@ console.log(firstNumber, restOfTheNumbers);
 
 ```javascript
 const details = {
- firstName: 'Code',
- lastName: 'Burst',
+ firstName: 'Stalin',
+ lastName: 'Ramesh',
  age: 22
 };
 const { age, ...other } = details;
+
 console.log(age, other);
-// 22 { firstName: 'Code', lastName: 'Burst' }
+
+// 22 { firstName: 'Stalin', lastName: 'Ramesh' }
 ```
 
 * Example 3: In arrays and objects, the rest operator can only come at the end. That is, this syntax won’t work:
@@ -32,7 +35,7 @@ const [ firstLetter, ...restOfTheLetters, lastLetter ] = 'Codeburst';
 * [ ] Give a thought on use cases where we may use this in our codebase.
 
 {% hint style="info" %}
-If we use rest operator to gather function arguments into an array, it is termed as rest parameter.
+If we use rest operator to gather function arguments into an array, it is termed as `rest parameter`.
 {% endhint %}
 
 * References:

@@ -5,7 +5,8 @@ This course is organised into several modules and concepts.
 **Module:** 
 
 * Every module tries to answer: What? Why? How? When?
-* A module has certain concepts divided in to basics, intermediate and advanced levels.
+* A module is divided in to small concepts
+* All concepts are organised into basics, intermediate and advanced levels.
 
 **Challenge:** Each challenge is aimed to get your hands dirty.
 
@@ -13,6 +14,8 @@ This course is organised into several modules and concepts.
 
 * It will revise the concepts learned till that point of time.
 * It will put a base for future concepts.
+
+**Suggested way to learn:** After understanding every concept, go through the corresponding exercises, listed at the end of module.
 
 ## Modules
 
