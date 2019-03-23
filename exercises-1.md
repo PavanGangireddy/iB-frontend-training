@@ -299,38 +299,7 @@ document.write(personTemplate(person));
 {% endtab %}
 
 {% tab title="1.6" %}
-```javascript
-// Exercise 1
-
-this.lives = 20
-
-const cat = { 
-    lives: 9, 
-    jumps: () => { 
-        this.lives-- 
-    }
-}
-
-cat.jumps() 
-console.log("cat.lives, this.lives: ", cat.lives, this.lives)
-
-// this is not bound to anything, 
-// and will inherit the value of this from its parent scope.
-
-
-// Exercise 2
-
-const button = document.getElementById('press');
-button.addEventListener('click', () => {
-  this.classList.toggle('on');
-});
-
-// If we click the button, we would get a TypeError. 
-// It is because this is not bound to the button, 
-// but instead bound to its parent scope.
-```
+Complete the challenges in this article: [https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b](https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b)
 {% endtab %}
 {% endtabs %}
-
-
 

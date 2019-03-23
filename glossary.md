@@ -4,7 +4,7 @@
 
 ### 1. Javascript
 
-#### Basics
+#### Novice
 
 * [x] Const and let
 * [x] Destructuring
@@ -14,9 +14,18 @@
 * [x] Arrow Functions
 * [ ] Classes
 
+#### Beginner
+
+* [ ] Primitive [Data types](https://javascript.info/types)
+* [ ] [Operators](https://javascript.info/operators)
+* [ ] [Comparisons](https://javascript.info/comparison)
+* [ ] [Conditional operators: if, '?'](https://javascript.info/ifelse)  and [Logical operators](https://javascript.info/logical-operators)
+* [ ] [Loops](https://javascript.info/while-for)
+* [ ] [Functions](https://javascript.info/function-basics). [Good Reference](https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99).
+* [ ] [Arrow Functions Revisited](https://javascript.info/arrow-functions)
+
 #### Intermediate
 
-* [ ] [Conditional operators: if, '?'](https://javascript.info/ifelse) and [Comparisons](https://javascript.info/comparison)
 * [ ] [Error Handling](https://javascript.info/try-catch)
 * [ ] [Promise](https://javascript.info/promise-basics)
 * [ ] [Async, Await](https://javascript.info/async-await)
@@ -24,7 +33,6 @@
 
 #### Advanced
 
-* [ ] [Hoisting](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/). [Questions](https://medium.freecodecamp.org/function-hoisting-hoisting-interview-questions-b6f91dbc2be8).
 * [ ] [Function Expression vs Function Declaration](https://javascript.info/function-expressions-arrows#function-expression-vs-function-declaration)
 * [ ] [Closure](https://javascript.info/closure)
 * [ ] [Currying](https://javascript.info/currying-partials)
