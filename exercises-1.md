@@ -334,6 +334,8 @@ const person = {
 console.log(doSomething.name);     
 console.log(person.sayName.name);
 ```
+
+* [More](https://leanpub.com/understandinges6/read#leanpub-auto-ecmascript-6s-name-property) about ES6 name property
 {% endtab %}
 
 {% tab title="1.7" %}
