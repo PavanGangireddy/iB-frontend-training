@@ -12,7 +12,7 @@
 * [x] Rest Operator
 * [x] Template Literals
 * [x] Arrow Functions
-* [ ] Classes
+* [x] Classes
 
 #### Beginner
 
