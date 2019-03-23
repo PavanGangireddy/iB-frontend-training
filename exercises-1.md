@@ -299,7 +299,41 @@ document.write(personTemplate(person));
 {% endtab %}
 
 {% tab title="1.6" %}
-Complete the challenges in this article: [https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b](https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b)
+* Complete the challenges in this article: [https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b](https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b)
+
+```javascript
+// Exercise 1
+
+function doSomething() {
+    // ...
+}
+
+const doAnotherThing = () => {
+    // ...
+};
+
+console.log(doSomething.name);  
+console.log(doAnotherThing.name); 
+
+// #1 All functions in an ES6 program will have an 
+// appropriate value for their name property. 
+
+// Exercise 2 
+
+const doSomething = function doSomethingElse() {
+    // ...
+};
+
+const person = {
+    name: 'Ramesh',
+    sayName: function() {
+        console.log(this.name);
+    }
+}
+
+console.log(doSomething.name);     
+console.log(person.sayName.name);
+```
 {% endtab %}
 
 {% tab title="1.7" %}
