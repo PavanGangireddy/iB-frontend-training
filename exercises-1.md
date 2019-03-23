@@ -301,5 +301,85 @@ document.write(personTemplate(person));
 {% tab title="1.6" %}
 Complete the challenges in this article: [https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b](https://codeburst.io/javascript-understand-arrow-function-syntax-ab4081bba85b)
 {% endtab %}
+
+{% tab title="1.7" %}
+```javascript
+// Exercise 1
+
+// Convert the following to ES6, use classes instead of 
+// object.prototype...
+
+function Shape(id) {
+  this.id = id;
+}
+
+// add area function
+Shape.prototype.area = function (x, y) {
+    return x*y
+};
+         
+var Square = new Shape('Square');
+console.log(Square.area(4,4)); // 16
+
+
+// Exercise 2
+
+function Speaker(name, verb) {
+  this.name = name
+  this.verb = verb || "says"
+}
+Speaker.prototype.speak = function(text) {
+  console.log(this.name + " " + this.verb + " '" + text + "'")
+}
+
+function Shouter(name) {
+  Speaker.call(this, name, "shouts")
+}
+
+Shouter.prototype = Object.create(Speaker.prototype)
+Shouter.prototype.speak = function(text) {
+  Speaker.prototype.speak.call(this, text.toUpperCase())
+}
+
+const LoudShouter = new Shouter("Dr. Loudmouth")
+LoudShouter.speak("hello there")
+
+// Exercise 3
+
+function Person(first, last, age, gender, interests) {
+    this.name = {
+        'first': first,
+        'last': last
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+
+}
+
+Person.genderConstants = {
+    male: "MALE",
+    female: "FEMALE"
+}
+
+Person.prototype.bio = function() {
+    console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+}
+
+Person.prototype.greeting = function() {
+    console.log('Hi! I\'m ' + this.name.first + ', ' + this.gender + '.');
+};
+
+var person1 = new Person('Bob', 'Smith', 32, Person.genderConstants.male, ['music', 'skiing']);
+
+person1['age']
+person1.interests[1]
+person1.bio()
+person1.greeting()
+
+// Understand the use of static syntax in es6
+
+```
+{% endtab %}
 {% endtabs %}
 
